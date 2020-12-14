@@ -1,4 +1,4 @@
-import qs from '../index'
+import {qs} from '../index'
 
 describe('querystring', () => {
   test('parses a simple string', () => {

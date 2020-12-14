@@ -8,7 +8,7 @@ type parseOptions = {
   strictNullHandling?: boolean
 }
 
-const qs = {
+export const qs = {
   /**
    * parse querystring like: foo=bar&bar=baz
    * @param querystring
@@ -31,5 +31,3 @@ const qs = {
     return result
   }
 }
-
-export default qs

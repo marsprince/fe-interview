@@ -4,13 +4,12 @@
     "url": "https://github.com/marsprince/fe-interview"
   },
   "scripts": {
-    "commit": "git add . && git-cz",
+    "commit": "rz-commit",
     "test": "jest"
   },
   "devDependencies": {
-    "@razors/build-jest": "^0.0.20",
-    "commitizen": "^4.2.2",
-    "cz-conventional-changelog": "^3.3.0"
+    "@razors/build-commit": "^0.0.20",
+    "@razors/build-jest": "^0.0.20"
   },
   "config": {
     "commitizen": {

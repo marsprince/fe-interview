@@ -499,6 +499,14 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@razors/build-commit@^0.0.20":
+  version "0.0.20"
+  resolved "https://registry.yarnpkg.com/@razors/build-commit/-/build-commit-0.0.20.tgz#0d950f2925818dbe07c245cbf4ff69b50c59b223"
+  integrity sha512-EpWCfhHqjfCcChW7f32GXYB8gJS44MYRCzMEbtTHFUZ5ej7hnNrsFvjDBQ3rix8e/cvAzHrqoe1jw+xsvxUp9w==
+  dependencies:
+    commitizen "^4.1.2"
+    cz-conventional-changelog "^3.2.0"
+
 "@razors/build-jest@^0.0.20":
   version "0.0.20"
   resolved "https://registry.yarnpkg.com/@razors/build-jest/-/build-jest-0.0.20.tgz#03f7232ece79f4365ec6886e01df53d39cdc1f2c"
@@ -1224,7 +1232,7 @@ commander@^2.19.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
 
-commitizen@^4.0.3, commitizen@^4.2.2:
+commitizen@^4.0.3, commitizen@^4.1.2, commitizen@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-4.2.2.tgz#1a93dd07208521ea1ebbf832593542dac714cc79"
   integrity sha512-uz+E6lGsDBDI2mYA4QfOxFeqdWUYwR1ky11YmLgg2BnEEP3YbeejpT4lxzGjkYqumnXr062qTOGavR9NtX/iwQ==
@@ -1347,7 +1355,7 @@ cssstyle@^2.2.0:
   dependencies:
     cssom "~0.3.6"
 
-cz-conventional-changelog@3.3.0, cz-conventional-changelog@^3.3.0:
+cz-conventional-changelog@3.3.0, cz-conventional-changelog@^3.2.0, cz-conventional-changelog@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/cz-conventional-changelog/-/cz-conventional-changelog-3.3.0.tgz#9246947c90404149b3fe2cf7ee91acad3b7d22d2"
   integrity sha512-U466fIzU5U22eES5lTNiNbZ+d8dfcHcssH4o7QsdWaCcRs/feIPCxKYSWkYBNs5mny7MvEfwpTLWjvbm94hecw==
