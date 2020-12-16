@@ -78,3 +78,10 @@ export namespace FEI {
    */
   export type InstanceType<T extends new (...args: any) => any> = T extends new (...args: any) => infer R ? R : any;
 }
+
+/**
+ * own
+ */
+export namespace FEI {
+  export type Function = (...args: any[]) => any;
+}
