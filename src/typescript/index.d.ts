@@ -84,4 +84,11 @@ export namespace FEI {
  */
 export namespace FEI {
   export type Function = (...args: any[]) => any;
+  // Five years and Symbol as index still not allowed
+  // https://github.com/microsoft/TypeScript/issues/1863
+  export type Object = {
+    [key: string]: any
+  } & {
+    [key: number]: any
+  }
 }
