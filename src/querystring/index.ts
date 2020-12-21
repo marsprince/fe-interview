@@ -1,12 +1,11 @@
 import type from '../type'
-
-type parseObject = {
-  [key: string]: any
-}
+import {FEI} from '../typescript';
 
 type parseOptions = {
   strictNullHandling?: boolean
 }
+
+type Object = FEI.Object
 
 export const qs = {
   /**
@@ -14,11 +13,11 @@ export const qs = {
    * @param querystring
    * @param options
    */
-  parse(querystring: string, options?: parseOptions): parseObject {
+  parse(querystring: string, options?: parseOptions): Object {
     if(!type.isString(querystring)) {
       throw new Error('url must be string')
     }
-    const result: parseObject = {}
+    const result: Object = {}
     const list = querystring.split('&');
     list.forEach(item => {
       const slices = item.split('=');
@@ -29,5 +28,16 @@ export const qs = {
       result[key] = val === undefined ? defaultValue : val
     })
     return result
+  },
+  stringify(obj: Object) {
+    let resultStr = ''
+    const keys = Object.keys(obj)
+    keys.forEach((key,index) => {
+      resultStr+=`${key}=${obj[key]}`
+      if(index !== keys.length - 1) {
+        resultStr+='&'
+      }
+    })
+    return resultStr
   }
 }
